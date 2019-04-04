@@ -29,7 +29,7 @@ Results are saved to `results.csv` in the root directory.
  - **debug.log**: log from Selenium about webdriver details
  - **results_temp.csv**: created during processings, deleted upon successful completion
 
-### Installation
+## Installation
 
 Requires Python 3.6+, Selenium 2, Google Chrome 72+, and BeautifulSoup 4 to run.
 
@@ -58,6 +58,8 @@ IMPLICITLY_WAIT = 5 #seconds
 PAGE_LOAD_TIMEOUT = 10 #seconds
 MAX_TIMEOUTS = 3 #excpetions
 ```
+
+## About
 
 ##### Authors
 Clark Brown, Brigham Young University
