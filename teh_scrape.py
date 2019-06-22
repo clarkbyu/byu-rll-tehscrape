@@ -45,19 +45,19 @@ Function to get the appropriate driver based on the OS and architecture.
 def getDriverPath():
     system = platform.system()
     architecture = platform.architecture()[0]
-    path = r'.\webdrivers'
+    path = r'./webdrivers'
     if(system == 'Windows'):
         if(architecture == '64bit'):
             path += r'\win64'
         else:
             path += r'\win32'
     elif(system == 'Darwin'):
-        path += r'\darwin'
+        path += r'/darwin'
     else:
-        path += r'\linux'
+        path += r'/linux'
         
     #Chrome assumed
-    path += r'\chromedriver'
+    path += r'/chromedriver'
     
     if(system == 'Windows'):
         path += r'.exe'
